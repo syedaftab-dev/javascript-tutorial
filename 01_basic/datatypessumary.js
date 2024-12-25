@@ -29,3 +29,33 @@ let Myfunction = function(){
 }
 Myfunction();
 
+
+// Primitive datatypes r stored in <Stack> 
+// /Non-Primitive datatypes r stored in <Heap>
+
+// 1.Stack
+let myYoutubeName = "Aftab"
+let anotherName = myYoutubeName
+anotherName = "Apna college"
+// yaha par myYoutubeName ki jo value thi wo change nhi kui ki memory bas iski copy ko anotherName main copy kare -----> Stack main aisa hotha hai
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+ // 2.Heap
+
+ let userOne = {
+    email : "user@gmail.com",
+    upi : "username@ybl"
+}
+
+let userTwo = userOne
+
+console.log(userOne);
+console.log(userTwo); // same value as userOne
+// yaha value heap main ek hi bar store hothi,bas userOne->ussepoint kartha ,fir userTwo bhi same data ko point kartha,
+//  note : agar data userTwoo se change karinge tho userOne main bhi change hotha
+
+userTwo.email = "newemail@gmail.com"
+
+console.log(userOne);
