@@ -1,6 +1,7 @@
 // Date 
 
 let myDate = new Date();
+// this is an object datatype
 console.log(myDate);
 console.log(myDate.toString());   
 console.log(myDate.toLocaleString());  // date format changed
@@ -15,4 +16,5 @@ console.log(newDate.toLocaleString('default',{
     weekday:"long",
 }));
 
+// above lines give result as a day ie here friday
 
